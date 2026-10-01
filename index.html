@@ -177,7 +177,7 @@ const MATERIAL_PRICE = {
 };
 
 /* ============================================================
-   内置配方数据
+   内置配方数据（符纸等级已修正）
    ============================================================ */
 const RECIPE_DATA = [
   /* 丹药 */
@@ -201,11 +201,16 @@ const RECIPE_DATA = [
   { name:'补天丹', tier:'天级', cat:'丹药', ingredients:[{name:'金灵羽',qty:18},{name:'千叶露',qty:10}] },
   { name:'大乘灵丹', tier:'天级', cat:'丹药', ingredients:[{name:'天蝉灵叶',qty:18},{name:'火莲子',qty:9}] },
 
-  /* 符文 */
-  { name:'归灵符', tier:'黄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'五行玉',qty:3},{name:'仙灵莲',qty:2}] },
-  { name:'化清符', tier:'黄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'五行玉',qty:3},{name:'雪玉菇',qty:2}] },
-  { name:'融灵符', tier:'黄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'寒铁',qty:4},{name:'金雷竹',qty:3}] },
-  { name:'劫云符', tier:'黄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'寒铁',qty:4}] },
+  /* 符文（等级已修正） */
+  { name:'符纸小人', tier:'黄级', cat:'符文', ingredients:[{name:'朱砂',qty:1},{name:'钨铁矿',qty:2}] },
+  { name:'回春符', tier:'黄级', cat:'符文', ingredients:[{name:'朱砂',qty:1},{name:'钨铁矿',qty:2},{name:'天心花',qty:2}] },
+  { name:'火云符', tier:'黄级', cat:'符文', ingredients:[{name:'朱砂',qty:1},{name:'千金石',qty:2},{name:'铁木叶',qty:2}] },
+  { name:'匿行符', tier:'黄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'千金石',qty:2},{name:'沙木根',qty:2}] },
+  { name:'陷地符', tier:'玄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'星纹钢',qty:2},{name:'地藏花',qty:2}] },
+  { name:'归灵符', tier:'玄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'五行玉',qty:3},{name:'仙灵莲',qty:2}] },
+  { name:'化清符', tier:'玄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'五行玉',qty:3},{name:'雪玉菇',qty:2}] },
+  { name:'融灵符', tier:'玄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'寒铁',qty:4},{name:'金雷竹',qty:3}] },
+  { name:'劫云符', tier:'玄级', cat:'符文', ingredients:[{name:'朱砂',qty:2},{name:'寒铁',qty:4}] },
   { name:'雷神符', tier:'地级', cat:'符文', ingredients:[{name:'朱砂',qty:5},{name:'天青石矿',qty:4},{name:'玄玉鳞',qty:1}] },
   { name:'玄化生灵符', tier:'地级', cat:'符文', ingredients:[{name:'朱砂',qty:5},{name:'天青石矿',qty:4},{name:'千叶露',qty:2}] },
   { name:'天戈符', tier:'地级', cat:'符文', ingredients:[{name:'朱砂',qty:5},{name:'精金',qty:5},{name:'火莲子',qty:2}] },
@@ -224,17 +229,12 @@ const RECIPE_DATA = [
   { name:'云过无痕', tier:'地级', cat:'傀儡', ingredients:[{name:'天青石矿',qty:10},{name:'精金',qty:10},{name:'玄玉鳞',qty:5}] },
 
   /* 法宝 */
-  { name:'符纸小人', tier:'黄级', cat:'法宝', ingredients:[{name:'朱砂',qty:1},{name:'钨铁矿',qty:2}] },
-  { name:'回春符', tier:'黄级', cat:'法宝', ingredients:[{name:'朱砂',qty:1},{name:'钨铁矿',qty:2},{name:'天心花',qty:2}] },
-  { name:'火云符', tier:'黄级', cat:'法宝', ingredients:[{name:'朱砂',qty:1},{name:'千金石',qty:2},{name:'铁木叶',qty:2}] },
-  { name:'匿形符', tier:'黄级', cat:'法宝', ingredients:[{name:'朱砂',qty:2},{name:'千金石',qty:2},{name:'沙木根',qty:2}] },
   { name:'桃木剑', tier:'黄级', cat:'法宝', ingredients:[{name:'妖丹',qty:2},{name:'钨铁矿',qty:2},{name:'铁木叶',qty:5}] },
   { name:'碧水剑', tier:'黄级', cat:'法宝', ingredients:[{name:'妖丹',qty:2},{name:'千斤石',qty:6},{name:'沙木根',qty:2}] },
   { name:'山河扇', tier:'黄级', cat:'法宝', ingredients:[{name:'妖丹',qty:2},{name:'钨铁矿',qty:5}] },
   { name:'焦尾琴', tier:'黄级', cat:'法宝', ingredients:[{name:'妖丹',qty:2},{name:'钨铁矿',qty:3},{name:'沙木根',qty:1}] },
   { name:'桃木簪', tier:'黄级', cat:'法宝', ingredients:[{name:'妖丹',qty:2},{name:'千斤石',qty:6},{name:'铁木叶',qty:2}] },
   { name:'青光葫芦', tier:'黄级', cat:'法宝', ingredients:[{name:'妖丹',qty:2},{name:'钨铁矿',qty:4},{name:'千斤石',qty:4}] },
-  { name:'陷地符', tier:'玄级', cat:'法宝', ingredients:[{name:'朱砂',qty:2},{name:'星纹钢',qty:2},{name:'地藏花',qty:2}] },
   { name:'白剑', tier:'玄级', cat:'法宝', ingredients:[{name:'妖丹',qty:2},{name:'星纹钢',qty:6}] },
   { name:'霜华剑', tier:'玄级', cat:'法宝', ingredients:[{name:'妖丹',qty:2},{name:'寒铁',qty:6},{name:'五行玉',qty:1}] },
   { name:'灵犀笔', tier:'玄级', cat:'法宝', ingredients:[{name:'妖丹',qty:2},{name:'星纹钢',qty:3},{name:'金雷竹',qty:2}] },
@@ -493,7 +493,6 @@ function update(){
     });
     html += '</tbody></table>';
 
-    /* 简洁版总价条 */
     const targetSentence = chosen
       .map(c => '<b>' + fmt(c.qty) + '</b> 个 ' + escapeHtml(c.name))
       .join(' + ');
